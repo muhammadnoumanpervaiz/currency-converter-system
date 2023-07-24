@@ -17,7 +17,7 @@ router.get('/country/:countryName',verifyToken, async (req, res) => {
       const countryCurrencies = countryData.currencies;
 
       // Fetch exchange rate data from ExchangeRate-API
-      const exchangeRateResponse = await axios.get(`http://api.exchangeratesapi.io/v1/latest?access_key=99a71b7ba762160a3e82d383b5d8ab1d&format=1`);
+      const exchangeRateResponse = await axios.get(`http://api.exchangeratesapi.io/v1/latest?access_key=ACCESS_KEY&format=1`);
       const exchangeRateData = exchangeRateResponse.data;
       if (!exchangeRateData) {
           return res.status(500).json({ message: 'Could not fetch exchange rate data.' });

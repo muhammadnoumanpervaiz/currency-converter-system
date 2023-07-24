@@ -2,6 +2,10 @@
 - Currency cnverter system is providing the well authentication system on the first hand and then it will route us to currency converter system after successfull authentication.
 - In Currency converter system you can see the complete basic detail of countries as `Population`, `Official name`, `symbol`, `currency` and current currency value comparatively `EURO`
 - User can easily get local currency conversion and best thing is that user can list the countries and get all countries currency conversion values in one time
+# How to run project:
+- You will have to install node_module in both directories as `frontend` and `backend`
+1. Backend command: `npm run dev`
+2. Frontend command: `npm start`
 
 # How Authentication work?
 - There are using two fields `Email` and `Password`. 
